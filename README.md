@@ -154,32 +154,15 @@ Key Features of the Structure:
 
 -  **SCSS support** for styling components
 
-  
-
 ---
-
-  
 
 ## 🚀 NPM Scripts
 
-  
-
-| Script | Description |
-
+| Script     | Description                             |
 |------------|-----------------------------------------|
-
-| `dev` | Starts the Vite development server |
-
-| `build` | Builds the production-ready application |
-
-| `preview` | Preview the production build locally |
-
-| `lint` | Runs ESLint to check code quality |
-
-  
-
----
-
-  
+| dev      | Starts the Vite development server      |
+| build    | Builds the production-ready application |
+| preview  | Preview the production build locally    |
+| lint     | Runs ESLint to check code quality       |
 
 Feel free to reach out if you want help with deployment or any enhancements!
