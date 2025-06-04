@@ -1,0 +1,28 @@
+$color: #737A91;
+$neue: 'Neue';
+
+.tag-title {
+
+    color: $color;
+    font-weight: 500;
+    font-family: $neue;
+    font-size: 14px;
+}
+
+.btn-custom-tag {
+
+    border: 1px solid $color;
+    color: $color;
+    font-weight: 500;
+    font-family: $neue;
+    font-size: 12px;
+}
+
+.btn-active-tag {
+
+    border: 1px solid $color !important;
+    background: $color !important;
+    font-weight: 500;
+    font-family: $neue;
+    font-size: 12px;
+}

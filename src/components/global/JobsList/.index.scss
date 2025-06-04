@@ -1,0 +1,34 @@
+$neue: 'Neue';
+$dark-color: #333333;
+$cobalt-blue: #0154AA;
+
+.jobs-list {
+
+    .jobs-text-dark {
+
+        font-family: $neue;
+        font-size: 18px;
+        color: $dark-color;
+
+    }
+
+    .jobs-text-blue {
+
+        font-family: $neue;
+        font-size: 14px;
+        color: $cobalt-blue;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 0.2px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $cobalt-blue;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$neue: 'Neue';
+$heading-dark: #333333;
+$heading-color: #0154AA;
+$welcome-text: #585D6E;
+
+.welcome {
+
+    h1 {
+
+        font-family: $neue;
+        font-weight: 600;
+        color: $heading-dark;
+        font-size: 22px;
+        letter-spacing: 0px;
+
+        span {
+            color: $heading-color;
+        }
+    }
+
+    p {
+        font-family: $neue;
+        color: $welcome-text;
+        font-size: 14px;
+    }
+}

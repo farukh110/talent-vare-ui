@@ -1,0 +1,89 @@
+$neue: 'Neue';
+$dark-color: #333333;
+$black-coral: #585D6E;
+$cobalt-blue: #0154AA;
+
+.job-card {
+
+    border-color: #e1e1e1;
+    border-radius: 10px;
+
+    .text-promoted {
+
+        font-size: 10px;
+        font-family: $neue;
+        font-weight: 600;
+        color: $dark-color;
+    }
+
+    .job-card_logo {
+        width: 40;
+        height: 40;
+        gap: 10px;
+        border-radius: 9.11px;
+        border-width: 0.76px;
+        padding-top: 6px;
+        padding-right: 8px;
+        padding-bottom: 6px;
+        padding-left: 8px;
+
+        img {
+            width: 23px;
+            height: 21.4px;
+        }
+    }
+
+    .card-title {
+
+        font-size: 14px;
+        font-family: $neue;
+        font-weight: 500;
+        color: $dark-color;
+    }
+
+    .card-subtitle {
+
+        font-size: 12px;
+        font-family: $neue;
+        font-weight: 500;
+        color: $dark-color;
+    }
+
+    .location,
+    .applicants {
+
+        .icon {
+            color: $black-coral;
+        }
+
+        small {
+
+            font-size: 12px;
+            font-family: $neue;
+            color: $black-coral;
+        }
+
+        .no_applicants {
+            color: $cobalt-blue;
+        }
+    }
+
+    .btn-apply {
+
+        font-size: 12px;
+        font-weight: 500;
+        font-family: $neue;
+        width: 115px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+
+        span {
+            line-height: 100%;
+        }
+    }
+
+    .bookmark-icon {
+        color: #aaaaaa;
+        font-size: 16px;
+    }
+}
