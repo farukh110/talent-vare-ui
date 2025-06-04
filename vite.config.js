@@ -23,4 +23,24 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1500, // Default is 500KB — raised to reduce false alarms
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // Separate node_modules into a 'vendor' chunk
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+
+          // Example: Split heavy routes/pages (customize this as needed)
+          if (id.includes('src/pages/Profile')) {
+            return 'profile';
+          }
+
+          return undefined;
+        }
+      }
+    }
+  }
 })
