@@ -48,7 +48,6 @@ A responsive, pixel-perfect UI for the TalentVare homepage, implemented using **
 | [bootstrap](https://getbootstrap.com/)        | ^5.3.6    | CSS framework for responsive design      |
 | [lucide-react](https://lucide.dev/)     | ^0.511.0  | Icon library                             |
 | [sass](https://sass-lang.com/)             | ^1.89.1   | CSS preprocessor for styling              |
-| talent-vare-ui   | file:     | Local UI component package (if any)       |
 
 ---
 
