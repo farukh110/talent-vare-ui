@@ -74,16 +74,6 @@ $profile_height: 38px;
     width: 147px;
 }
 
-@media (max-width: 480px) {
-
-    .custom-navbar {
-        background: #ffffff;
-        padding-left: unset;
-        padding-right: unset;
-        height: 70px;
-    }
-}
-
 @media (max-width: 991px) {
 
     .search-input {
@@ -93,8 +83,8 @@ $profile_height: 38px;
     .user-proile-icon {
 
         position: absolute;
-        top: 10px;
-        right: 50px;
+        top: 20px;
+        right: 100px;
         color: $link_color;
         cursor: pointer;
     }
@@ -120,8 +110,8 @@ $profile_height: 38px;
 
         .icon {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: 50px;
             transition: opacity 0.3s ease, transform 0.3s ease;
             color: inherit; // inherit the color from the button
         }
@@ -239,5 +229,31 @@ $profile_height: 38px;
 
     .profile-wrapper {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .custom-navbar {
+        background: #ffffff;
+        padding-left: unset;
+        padding-right: unset;
+        height: 70px;
+
+        .user-proile-icon {
+
+            top: 20px;
+            right: 60px;
+        }
+
+    }
+
+    .navbar-toggler {
+
+        .icon {
+
+            top: 20px;
+            right: 20px;
+        }
     }
 }
