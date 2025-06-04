@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import logo from '@/assets/logo/talent-vare.svg';
-import profile from '@/assets/images/profile/user.svg';
+import profile from '@/assets/images/profile/user.png';
 import searchIcon from '@/assets/icons/search_icon.svg';
 import CustomButton from '@/components/ui/Button';
 import './index.scss';
