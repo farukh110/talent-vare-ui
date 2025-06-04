@@ -87,3 +87,41 @@ $cobalt-blue: #0154AA;
         font-size: 16px;
     }
 }
+
+@media (max-width: 480px) {
+
+    .job-card {
+
+        .btn-apply {
+
+            width: 200px;
+            max-width: 100%;
+        }
+
+        .bookmark-icon {
+
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .job-card {
+
+        .btn-apply {
+
+            width: 160px;
+            max-width: 100%;
+        }
+
+        .bookmark-icon {
+
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}

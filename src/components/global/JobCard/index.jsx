@@ -59,7 +59,7 @@ const JobCard = ({ job, showPromoted = true }) => {
 
                         {/* Right: Bookmark & Hot Badge */}
                         <div className="d-flex align-items-center gap-2">
-                            <span aria-label="Bookmark">
+                            <span className="bookmark-wrapper" aria-label="Bookmark">
                                 <Bookmark className="bookmark-icon" size={16} />
                             </span>
                         </div>
