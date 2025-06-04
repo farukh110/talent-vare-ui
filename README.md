@@ -106,139 +106,75 @@ Feel free to reach out if you want help with deployment or any enhancements!
 
   
 
-TALENT-VARE-UI/
-
-├── node_modules/
-
-├── public/
-
-├── src/
-
-│ ├── assets/
-
-│ │ ├── fonts/
-
-│ │ ├── icons/
-
-│ │ ├── images/
-
-│ │ └── logo/
-
-│ │ └── react.svg
-
-│ ├── components/
-
-│ │ ├── global/
-
-│ │ ├── JobCard/
-
-│ │ │ ├── index.jsx
-
-│ │ │ └── index.scss
-
-│ │ ├── JobMainArea/
-
-│ │ │ └── index.jsx
-
-│ │ ├── JobsList/
-
-│ │ │ ├── index.scss
-
-│ │ │ └── index.jsx
-
-│ │ ├── Navbar/
-
-│ │ │ ├── index.jsx
-
-│ │ │ └── index.scss
-
-│ │ ├── Profilesidebar/
-
-│ │ │ ├── index.jsx
-
-│ │ │ └── index.scss
-
-│ │ ├── QuickTags/
-
-│ │ │ ├── index.jsx
-
-│ │ │ └── index.scss
-
-│ │ └── SearchForm/
-
-│ │ ├── index.jsx
-
-│ │ └── index.scss
-
-│ ├── Welcome/
-
-│ ├── ui/
-
-│ │ ├── Button/
-
-│ │ │ └── index.jsx
-
-│ │ └── Calendar/
-
-│ │ └── index.jsx
-
-│ ├── web-controls/
-
-│ │ ├── data/
-
-│ │ └── index.js
-
-│ ├── pages/
-
-│ │ └── Home/
-
-│ │ ├── index.jsx
-
-│ │ └── index.scss
-
-│ ├── redux/
-
-│ │ ├── api/
-
-│ │ ├── jobSearch/
-
-│ │ │ └── jobSearchSlice.js
-
-│ │ ├── sidebar/
-
-│ │ │ └── sidebarSlice.js
-
-│ │ └── store/
-
-│ │ └── index.js
-
-│ ├── App.jsx
-
-│ ├── App.scss
-
-│ ├── index.scss
-
-│ ├── main.jsx
-
-│ └── Ann.iev
-
-├── .gitignore
-
-├── eslint.config.js
-
-├── index.html
-
-├── jsconfig.json
-
-├── package-lock.json
-
-├── package.json
-
-├── README.md
-
-└── vite.config.js
-
-  
+# TalentVare Project Structure
+
+| Folder / File               | Description                     |
+|----------------------------|---------------------------------|
+| **node_modules/**           | Installed npm packages          |
+| **public/**                 | Public static assets            |
+| **src/**                   | Source code                    |
+| ├─ **assets/**              | Static assets                  |
+| │  ├─ fonts/                | Font files                    |
+| │  ├─ icons/                | Icon files                    |
+| │  ├─ images/               | Image files                   |
+| │  └─ logo/                 | Logo files                    |
+| │     └─ react.svg          | React logo SVG file           |
+| ├─ **components/**          | React components              |
+| │  ├─ global/               | Global shared components      |
+| │  ├─ JobCard/              | JobCard component             |
+| │  │  ├─ index.jsx          | JobCard React component       |
+| │  │  └─ index.scss         | JobCard styles                |
+| │  ├─ JobMainArea/          | JobMainArea component         |
+| │  │  └─ index.jsx          | JobMainArea React component   |
+| │  ├─ JobsList/             | JobsList component            |
+| │  │  ├─ index.scss         | JobsList styles               |
+| │  │  └─ index.jsx          | JobsList React component      |
+| │  ├─ Navbar/               | Navbar component              |
+| │  │  ├─ index.jsx          | Navbar React component        |
+| │  │  └─ index.scss         | Navbar styles                 |
+| │  ├─ Profilesidebar/       | Profilesidebar component      |
+| │  │  ├─ index.jsx          | Profilesidebar React component|
+| │  │  └─ index.scss         | Profilesidebar styles         |
+| │  ├─ QuickTags/            | QuickTags component           |
+| │  │  ├─ index.jsx          | QuickTags React component     |
+| │  │  └─ index.scss         | QuickTags styles              |
+| │  └─ SearchForm/           | SearchForm component          |
+| │     ├─ index.jsx          | SearchForm React component    |
+| │     └─ index.scss         | SearchForm styles             |
+| ├─ **Welcome/**             | (Folder content not specified)|
+| ├─ **ui/**                  | UI reusable components        |
+| │  ├─ Button/               | Button component              |
+| │  │  └─ index.jsx          | Button React component        |
+| │  └─ Calendar/             | Calendar component            |
+| │     └─ index.jsx          | Calendar React component      |
+| ├─ **web-controls/**        | Web controls and utilities    |
+| │  ├─ data/                 | Data files                   |
+| │  └─ index.js              | Main web-controls JS file     |
+| ├─ **pages/**               | Page components               |
+| │  └─ Home/                 | Home page                    |
+| │     ├─ index.jsx          | Home React component          |
+| │     └─ index.scss         | Home page styles              |
+| ├─ **redux/**               | Redux state management files  |
+| │  ├─ api/                  | API related Redux code        |
+| │  ├─ jobSearch/            | Job search slice              |
+| │  │  └─ jobSearchSlice.js  | Job search slice file         |
+| │  ├─ sidebar/              | Sidebar slice                 |
+| │  │  └─ sidebarSlice.js    | Sidebar slice file            |
+| │  └─ store/                | Redux store setup             |
+| │     └─ index.js           | Redux store index file        |
+| ├─ App.jsx                  | Root React component          |
+| ├─ App.scss                 | Global app styles             |
+| ├─ index.scss               | Global styles                 |
+| ├─ main.jsx                 | React entry point             |
+| └─ Ann.iev                  | (File content not specified)  |
+| **.gitignore**              | Git ignore config             |
+| **eslint.config.js**        | ESLint configuration          |
+| **index.html**              | HTML template                 |
+| **jsconfig.json**           | JS config for IDEs            |
+| **package-lock.json**       | NPM lock file                 |
+| **package.json**            | NPM dependencies and scripts |
+| **README.md**               | Project readme file           |
+| **vite.config.js**          | Vite configuration            |
 
 Key Features of the Structure:
 
