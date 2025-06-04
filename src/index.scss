@@ -1,0 +1,40 @@
+@use 'sass:color';
+
+@font-face {
+  font-family: 'Neue';
+  src: url('@/assets/fonts/neue-haas/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  font-style: normal;
+}
+
+$primary-color: #0154AA;
+
+:root {
+  --bs-primary: #{$primary-color};
+  font-family: 'Neue', system-ui;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #F4F4F4;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  color: #fff;
+
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -10%) !important;
+    border-color: color.adjust($primary-color, $lightness: -12%) !important;
+  }
+}
+
+.sep {
+  border-bottom: 1px solid #e9ecef;
+}

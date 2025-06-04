@@ -1,0 +1,243 @@
+$neue: 'Neue';
+$link_color: #737A91;
+$placeholder_color: #737A91;
+$active-nav: #0154AA;
+
+$profile_width: 38px;
+$profile_height: 38px;
+
+.custom-navbar {
+
+    background: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 70px;
+
+    .navbar-nav {
+
+        .nav-link {
+
+            font-weight: 500;
+            font-family: $neue;
+            color: $link_color;
+        }
+
+        .active-nav {
+
+            font-weight: 600;
+            font-family: $neue;
+            font-size: 16px;
+            color: $active-nav;
+        }
+
+    }
+
+    .search-input {
+
+        background: #F6F9FF;
+        border-color: #F6F9FF;
+        font-family: $neue;
+        border-radius: 8px;
+        padding-top: 6.7px;
+        padding-bottom: 6.7px;
+        width: 261px;
+
+        &::placeholder {
+            color: $placeholder_color;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0px 1px #0154AA;
+        }
+    }
+}
+
+.profile-wrapper {
+
+    width: $profile_width;
+    height: $profile_height;
+    cursor: pointer;
+
+    img {
+        width: $profile_width;
+        height: $profile_height;
+    }
+}
+
+.btn-create {
+
+    border-radius: 8px;
+    font-family: $neue;
+    font-weight: 500;
+    padding-top: 6.7px;
+    padding-bottom: 6.7px;
+    width: 147px;
+}
+
+@media (max-width: 480px) {
+
+    .custom-navbar {
+        background: #ffffff;
+        padding-left: unset;
+        padding-right: unset;
+        height: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .search-input {
+        width: 100%;
+    }
+
+    .user-proile-icon {
+
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        color: $link_color;
+        cursor: pointer;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #737a91;
+
+        &:focus {
+
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: #0154aa;
+        }
+
+        .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            color: inherit; // inherit the color from the button
+        }
+
+        .visible {
+            opacity: 1;
+            transform: scale(1);
+            pointer-events: auto;
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: scale(0.8);
+            pointer-events: none;
+        }
+    }
+
+    .navbar-collapse {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-collapse.expanded {
+        max-height: 600px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .btn-create {
+        width: 261px;
+    }
+
+    form.d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .profile-wrapper {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1249px) {
+
+    .search-input {
+        width: 100%;
+    }
+
+    .custom-navbar {
+
+        .search-input,
+        .btn-create {
+            display: none !important;
+        }
+    }
+
+    /* Hide toggler button */
+    .navbar-toggler {
+        display: none;
+    }
+
+    /* Show navbar-collapse expanded and visible */
+    .navbar-collapse {
+        max-height: none !important;
+        /* no max height */
+        overflow: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
+        position: static !important;
+        box-shadow: none !important;
+        text-align: left;
+        /* optional, better desktop alignment */
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: none !important;
+    }
+
+    /* No need for expanded class on desktop, but if present: */
+    .navbar-collapse.expanded {
+        max-height: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .btn-create {
+        width: 261px;
+    }
+
+    form.d-flex {
+        flex-direction: row !important;
+        /* horizontal layout on desktop */
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: auto;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .profile-wrapper {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,13 @@
+.home-wrapper {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 480px) {
+
+    .home-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
