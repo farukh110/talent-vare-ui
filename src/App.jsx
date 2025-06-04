@@ -1,6 +1,6 @@
 import '@/App.scss';                  // Global styles
 import Navbar from '@/components/global/Navbar'; // Navbar component
-import Home from '@/pages/home';      // Home page component
+import Home from '@/pages/Home';
 
 function App() {
   return (
